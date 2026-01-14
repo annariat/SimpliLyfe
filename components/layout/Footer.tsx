@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail } from "lucide-react";
 
 const footerLinks = {
   products: [
@@ -35,15 +34,6 @@ export function Footer() {
             <p className="mt-4 text-muted-foreground text-sm">
               Building products to simplify your life, one app at a time.
             </p>
-            <div className="flex gap-4 mt-6">
-              <a
-                href="mailto:support@simpli-lyfe.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Email"
-              >
-                <Mail size={20} />
-              </a>
-            </div>
           </div>
 
           {/* Products Links */}
