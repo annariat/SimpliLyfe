@@ -49,9 +49,15 @@ body {
   min-height: 100vh;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling with snap */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+/* Page-by-page scroll snap sections */
+section {
+  scroll-snap-align: start;
 }
 
 /* Selection color */
