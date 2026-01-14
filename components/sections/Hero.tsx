@@ -92,7 +92,7 @@ export function Hero() {
                   required
                   className="min-w-[280px] bg-card/60 backdrop-blur-sm"
                 />
-                <Button type="submit" disabled={isLoading} size="lg">
+                <Button type="submit" disabled={isLoading} className="px-8 py-3 text-base whitespace-nowrap">
                   {isLoading ? "Joining..." : "Join Beta"}
                   <ArrowRight size={18} className="ml-2" />
                 </Button>

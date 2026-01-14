@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Twitter, Linkedin, Instagram, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const footerLinks = {
   products: [
@@ -13,17 +13,10 @@ const footerLinks = {
     { href: "#", label: "Careers" },
   ],
   legal: [
-    { href: "#", label: "Privacy Policy" },
-    { href: "#", label: "Terms of Service" },
+    { href: "/privacy", label: "Privacy Policy" },
+    { href: "/terms", label: "Terms of Service" },
   ],
 };
-
-const socialLinks = [
-  { href: "#", icon: Twitter, label: "Twitter" },
-  { href: "#", icon: Linkedin, label: "LinkedIn" },
-  { href: "#", icon: Instagram, label: "Instagram" },
-  { href: "mailto:hello@simplilyfe.com", icon: Mail, label: "Email" },
-];
 
 export function Footer() {
   return (
@@ -43,16 +36,13 @@ export function Footer() {
               Building products to simplify your life, one app at a time.
             </p>
             <div className="flex gap-4 mt-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label={social.label}
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
+              <a
+                href="mailto:support@simpli-lyfe.com"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={20} />
+              </a>
             </div>
           </div>
 
@@ -111,10 +101,10 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} SimpliLyfe. All rights reserved.
+            &copy; {new Date().getFullYear()} SimpliLyfe Inc. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Made with focus in mind.
+            Made with simplicity in mind.
           </p>
         </div>
       </div>

@@ -64,7 +64,7 @@ export function CTA() {
                 type="submit"
                 disabled={isLoading}
                 variant="secondary"
-                className="whitespace-nowrap"
+                className="px-8 py-3 text-base whitespace-nowrap"
               >
                 {isLoading ? "Joining..." : "Join Beta"}
                 <ArrowRight size={18} className="ml-2" />

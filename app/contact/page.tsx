@@ -11,27 +11,21 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "hello@simplilyfe.com",
-    href: "mailto:hello@simplilyfe.com",
+    value: "support@simpli-lyfe.com",
+    href: "mailto:support@simpli-lyfe.com",
   },
   {
     icon: MapPin,
     title: "Location",
-    value: "San Francisco, CA",
+    value: "Ottawa, CA",
     href: null,
-  },
-  {
-    icon: MessageSquare,
-    title: "Social",
-    value: "@simplilyfe",
-    href: "https://twitter.com/simplilyfe",
   },
 ];
 
 const faqs = [
   {
     question: "When will TheFocusPath be publicly available?",
-    answer: "We're currently in beta and plan to launch publicly in early 2025. Join the beta to get early access!",
+    answer: "We're currently in beta and plan to launch publicly in early 2026. Join the beta to get early access!",
   },
   {
     question: "Is TheFocusPath free?",
@@ -39,11 +33,11 @@ const faqs = [
   },
   {
     question: "What platforms is TheFocusPath available on?",
-    answer: "Currently available as a web app. iOS and Android apps are in development and coming soon.",
+    answer: "Currently available as a web, iOS, and Android app.",
   },
   {
     question: "How do you protect my data?",
-    answer: "We use industry-standard encryption and never sell your data. Your notes and study materials remain private and secure.",
+    answer: "We use industry-standard encryption and never sell your data. Your notes and study materials stay on your local drives and are never at risk.",
   },
 ];
 
