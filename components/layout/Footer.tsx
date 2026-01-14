@@ -35,9 +35,9 @@ export function Footer() {
             <Image
               src="/Logo.png"
               alt="SimpliLyfe"
-              width={180}
-              height={48}
-              className="h-12 w-auto"
+              width={160}
+              height={50}
+              className="h-10 w-auto"
             />
             <p className="mt-4 text-muted-foreground text-sm">
               Building products to simplify your life, one app at a time.
