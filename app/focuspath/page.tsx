@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { CTA } from "@/components/sections/CTA";
 
 export const metadata: Metadata = {
@@ -14,7 +13,6 @@ export default function FocusPathPage() {
     <>
       <Hero />
       <Features />
-      <Testimonials />
       <CTA />
     </>
   );
