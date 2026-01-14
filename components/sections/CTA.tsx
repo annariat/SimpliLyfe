@@ -15,10 +15,10 @@ export function CTA() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const response = await fetch("/api/beta-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, type: "beta_signup" }),
+        body: JSON.stringify({ email }),
       });
 
       if (response.ok) {
