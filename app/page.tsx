@@ -104,7 +104,7 @@ export default function Home() {
             <Badge variant="primary" className="mb-3">
               Our Products
             </Badge>
-            <h2 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground">
               <span className="gradient-text">Simplify</span> Your Life
             </h2>
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="py-20 lg:py-32 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground">
               Why <span className="gradient-text">SimpliLyfe</span>?
             </h2>
           </div>
@@ -224,7 +224,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover flex flex-col justify-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white">
             Ready to Simplify Your Life?
           </h2>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">
