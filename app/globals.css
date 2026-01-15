@@ -54,23 +54,14 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Page-by-page scroll snap container */
+/* Smooth scroll container */
 .snap-scroll {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: calc(100vh - 64px); /* Account for navbar height */
   scroll-behavior: smooth;
 }
 
-/* Page-by-page scroll snap sections */
+/* Sections take full viewport height */
 .snap-scroll > section {
-  scroll-snap-align: start;
   min-height: calc(100vh - 64px);
-}
-
-/* Footer snap behavior */
-.snap-scroll > footer {
-  scroll-snap-align: end;
 }
 
 /* Hide scrollbar but keep functionality */
