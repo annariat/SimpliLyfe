@@ -66,10 +66,8 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  It all started with us.  Things we needed that didn&apos;t exist,   
-                  and if they did, they were too difficult or too expensive.  
-                  We build with our own needs in mind, and once we are happy with a product,
-                  we share with the world.  
+                  It all started with us. Simple products that we needed but could&apos;t find.
+                  We built for ourselves, and then decided to share with the world.
                 </p>
                 <p>
                   We believe that the best tools are the ones you don&apos;t have to
@@ -77,18 +75,13 @@ export default function AboutPage() {
                   most.
                 </p>
                 <p>
-                  Too many productivity apps are overcomplicated, trying to do
-                  everything and ending up doing nothing well. We take a different
-                  approach.
+                  Too many products are overcomplicated, trying to do everything and 
+                  doing nothing well. We take a different approach.
                 </p>
                 <p>
-                  Each SimpliLyfe product is designed with a clear purpose, built
-                  to solve specific problems exceptionally well. No feature bloat,
+                  Each SimpliLyfe product is designed with a clear purpose. It&apos;s built
+                  to solve specific problems exceptionally well. No feature bloat, no learning curve, 
                   no unnecessary complexity.
-                </p>
-                <p>
-                  With TheFocusPath, we started with students because we understand
-                  the unique challenges they face. But this is just the beginning.
                 </p>
               </div>
             </div>
