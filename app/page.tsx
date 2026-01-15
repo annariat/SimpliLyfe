@@ -99,7 +99,7 @@ export default function Home() {
 
       {/* Products Section */}
       <section className="py-8 lg:py-12 flex flex-col justify-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center max-w-3xl mx-auto mb-6">
             <Badge variant="primary" className="mb-3">
               Our Products
@@ -111,58 +111,58 @@ export default function Home() {
 
           {/* Featured Product */}
           {products.map((product) => (
-            <Card key={product.name} className="p-4 lg:p-6 mb-4">
-              <div className="grid lg:grid-cols-2 gap-4 items-center">
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-                      <product.icon className="text-primary" size={20} />
+            <Card key={product.name} className="p-6 sm:p-8 lg:p-10 mb-6">
+              <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <product.icon className="text-primary" size={24} />
                     </div>
-                    <Badge variant="secondary">{product.status}</Badge>
+                    <Badge variant="secondary" className="text-sm">{product.status}</Badge>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-1">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
                     {product.name}
                   </h3>
-                  <p className="text-base text-muted-foreground mb-2">
+                  <p className="text-base sm:text-lg text-muted-foreground">
                     {product.tagline}
                   </p>
-                  <div className="flex flex-wrap gap-1.5 mb-3">
+                  <div className="flex flex-wrap gap-2">
                     {product.features.map((feature) => (
                       <span
                         key={feature}
-                        className="px-2 py-0.5 bg-primary/10 text-primary rounded-full text-xs font-medium"
+                        className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
                       >
                         {feature}
                       </span>
                     ))}
                   </div>
                   <Link href={product.href}>
-                    <Button size="sm">
+                    <Button size="lg" className="mt-2">
                       Explore {product.name}
-                      <ArrowRight size={16} className="ml-1" />
+                      <ArrowRight size={18} className="ml-2" />
                     </Button>
                   </Link>
                 </div>
 
                 {/* Product Visual */}
                 <div className="relative hidden lg:block">
-                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl flex items-center justify-center p-4">
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
-                        <Calendar className="text-primary mx-auto mb-1" size={24} />
-                        <p className="text-xs font-medium">Calendar</p>
+                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl flex items-center justify-center p-6 lg:p-8">
+                    <div className="grid grid-cols-2 gap-4 w-full">
+                      <div className="p-4 lg:p-6 bg-card/80 rounded-xl border border-border text-center">
+                        <Calendar className="text-primary mx-auto mb-2" size={32} />
+                        <p className="text-sm font-medium">Calendar</p>
                       </div>
-                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
-                        <Brain className="text-secondary mx-auto mb-1" size={24} />
-                        <p className="text-xs font-medium">Unlimited Practice</p>
+                      <div className="p-4 lg:p-6 bg-card/80 rounded-xl border border-border text-center">
+                        <Brain className="text-secondary mx-auto mb-2" size={32} />
+                        <p className="text-sm font-medium">Unlimited Practice</p>
                       </div>
-                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
-                        <Zap className="text-accent mx-auto mb-1" size={24} />
-                        <p className="text-xs font-medium">Focus Mode</p>
+                      <div className="p-4 lg:p-6 bg-card/80 rounded-xl border border-border text-center">
+                        <Zap className="text-accent mx-auto mb-2" size={32} />
+                        <p className="text-sm font-medium">Focus Mode</p>
                       </div>
-                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
-                        <Sparkles className="text-primary mx-auto mb-1" size={24} />
-                        <p className="text-xs font-medium">Study Buddy</p>
+                      <div className="p-4 lg:p-6 bg-card/80 rounded-xl border border-border text-center">
+                        <Sparkles className="text-primary mx-auto mb-2" size={32} />
+                        <p className="text-sm font-medium">Study Buddy</p>
                       </div>
                     </div>
                   </div>
@@ -172,21 +172,21 @@ export default function Home() {
           ))}
 
           {/* Coming Soon */}
-          <div className="mt-12">
-            <h3 className="text-lg font-bold text-foreground text-center mb-4">
+          <div className="mt-8 lg:mt-12">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground text-center mb-6">
               Coming Soon
             </h3>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {upcomingProducts.map((product) => (
-                <Card key={product.name} className="text-center py-4 opacity-75">
-                  <CardContent className="p-3">
-                    <div className="w-10 h-10 bg-muted/20 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <product.icon className="text-muted-foreground" size={20} />
+                <Card key={product.name} className="text-center py-6 sm:py-8 opacity-75 flex-1">
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-muted/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <product.icon className="text-muted-foreground" size={24} />
                     </div>
-                    <h4 className="text-base font-semibold text-foreground mb-1">
+                    <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-2">
                       {product.name}
                     </h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm sm:text-base text-muted-foreground">
                       {product.description}
                     </p>
                   </CardContent>
