@@ -104,7 +104,7 @@ export default function Home() {
             <Badge variant="primary" className="mb-3">
               Our Products
             </Badge>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
               <span className="gradient-text">Simplify</span> Your Life
             </h2>
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
                     </div>
                     <Badge variant="secondary" className="text-sm">{product.status}</Badge>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
                     {product.name}
                   </h3>
                   <p className="text-base sm:text-lg text-muted-foreground">
@@ -173,7 +173,7 @@ export default function Home() {
 
           {/* Coming Soon */}
           <div className="mt-8 lg:mt-12">
-            <h3 className="text-lg sm:text-xl font-bold text-foreground text-center mb-6">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground text-center mb-6">
               Coming Soon
             </h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -183,7 +183,7 @@ export default function Home() {
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-muted/20 rounded-xl flex items-center justify-center mx-auto mb-3">
                       <product.icon className="text-muted-foreground" size={24} />
                     </div>
-                    <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-2">
+                    <h4 className="text-xl sm:text-2xl font-semibold text-foreground mb-2">
                       {product.name}
                     </h4>
                     <p className="text-sm sm:text-base text-muted-foreground">
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="py-20 lg:py-32 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
               Why <span className="gradient-text">SimpliLyfe</span>?
             </h2>
           </div>
@@ -210,7 +210,7 @@ export default function Home() {
             {values.map((value) => (
               <Card key={value.title} className="text-center">
                 <CardContent className="pt-8">
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-3">
                     {value.title}
                   </h3>
                   <p className="text-muted-foreground">{value.description}</p>
@@ -224,7 +224,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover flex flex-col justify-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
             Ready to Simplify Your Life?
           </h2>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">
