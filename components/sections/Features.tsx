@@ -5,44 +5,44 @@ import {
   CheckSquare,
   Brain,
   Timer,
-  Sparkles,
   BookOpen,
-  ArrowRight
+  ArrowRight,
+  LayoutDashboard
 } from "lucide-react";
 
 const features = [
   {
-    icon: Calendar,
-    title: "Smart Calendar",
-    description: "Sync your class schedule, set reminders, and never miss a deadline. AI suggests optimal study times based on your patterns.",
+    icon: LayoutDashboard,
+    title: "Custom Dashboard",
+    description: "Create custom dashboards to focus on what is important to you.",
     color: "text-primary",
     bgColor: "bg-primary/10",
+  },
+  {
+    icon: Calendar,
+    title: "Calendar",
+    description: "Sync your class schedule, set reminders, and never miss a deadline. AI suggests optimal study times based on your patterns.",
+    color: "text-secondary",
+    bgColor: "bg-secondary/10",
   },
   {
     icon: CheckSquare,
     title: "Task Management",
     description: "Break down assignments into manageable tasks. Track progress, set priorities, and celebrate your wins.",
-    color: "text-secondary",
-    bgColor: "bg-secondary/10",
+    color: "text-accent",
+    bgColor: "bg-accent/10",
   },
   {
     icon: Brain,
-    title: "AI Quiz Generation",
-    description: "Upload your notes and let AI create practice quizzes. Test your knowledge and identify areas for improvement.",
-    color: "text-accent",
-    bgColor: "bg-accent/10",
+    title: "Guide Excellence",
+    description: "Upload your notes and let us create study plans, flash cards, and quizzes to guide you to excellent results.",
+    color: "text-primary",
+    bgColor: "bg-primary/10",
   },
   {
     icon: Timer,
     title: "Focus Techniques",
     description: "Built-in Pomodoro timer, deep work modes, and distraction blockers to help you stay in the zone.",
-    color: "text-primary",
-    bgColor: "bg-primary/10",
-  },
-  {
-    icon: Sparkles,
-    title: "AI Study Assistant",
-    description: "Get smart recommendations, summaries of complex topics, and personalized study tips powered by AI.",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
   },
