@@ -13,7 +13,7 @@ const values = [
   {
     icon: Heart,
     title: "User-First",
-    description: "Every feature we build starts with understanding the real problems students face.",
+    description: "Every feature we build starts with understanding real every day problems.",
   },
   {
     icon: Lightbulb,
