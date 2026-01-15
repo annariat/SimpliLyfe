@@ -98,80 +98,71 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section className="py-20 lg:py-32 flex flex-col justify-center">
+      <section className="py-8 lg:py-12 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <Badge variant="primary" className="mb-6">
+          <div className="text-center max-w-3xl mx-auto mb-6">
+            <Badge variant="primary" className="mb-3">
               Our Products
             </Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
               <span className="gradient-text">Simplify</span> Your Life
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Each SimpliLyfe product is designed with a clear purpose — to solve
-              specific problems exceptionally well.
-            </p>
           </div>
 
           {/* Featured Product */}
           {products.map((product) => (
-            <Card key={product.name} className="p-8 mb-8">
-              <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <Card key={product.name} className="p-4 lg:p-6 mb-4">
+              <div className="grid lg:grid-cols-2 gap-4 items-center">
                 <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                      <product.icon className="text-primary" size={24} />
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <product.icon className="text-primary" size={20} />
                     </div>
                     <Badge variant="secondary">{product.status}</Badge>
                   </div>
-                  <h3 className="text-3xl font-bold text-foreground mb-2">
+                  <h3 className="text-2xl font-bold text-foreground mb-1">
                     {product.name}
                   </h3>
-                  <p className="text-xl text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-2">
                     {product.tagline}
                   </p>
-                  <p className="text-muted-foreground mb-6">
-                    {product.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-1.5 mb-3">
                     {product.features.map((feature) => (
                       <span
                         key={feature}
-                        className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
+                        className="px-2 py-0.5 bg-primary/10 text-primary rounded-full text-xs font-medium"
                       >
                         {feature}
                       </span>
                     ))}
                   </div>
                   <Link href={product.href}>
-                    <Button>
+                    <Button size="sm">
                       Explore {product.name}
-                      <ArrowRight size={18} className="ml-2" />
+                      <ArrowRight size={16} className="ml-1" />
                     </Button>
                   </Link>
                 </div>
 
                 {/* Product Visual */}
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="grid grid-cols-2 gap-4 p-8">
-                        <div className="p-4 bg-card/80 rounded-xl border border-border">
-                          <Calendar className="text-primary mx-auto mb-2" size={32} />
-                          <p className="text-sm font-medium">Calendar</p>
-                        </div>
-                        <div className="p-4 bg-card/80 rounded-xl border border-border">
-                          <Brain className="text-secondary mx-auto mb-2" size={32} />
-                          <p className="text-sm font-medium">AI Quizzes</p>
-                        </div>
-                        <div className="p-4 bg-card/80 rounded-xl border border-border">
-                          <Zap className="text-accent mx-auto mb-2" size={32} />
-                          <p className="text-sm font-medium">Focus Mode</p>
-                        </div>
-                        <div className="p-4 bg-card/80 rounded-xl border border-border">
-                          <Sparkles className="text-primary mx-auto mb-2" size={32} />
-                          <p className="text-sm font-medium">AI Assistant</p>
-                        </div>
+                <div className="relative hidden lg:block">
+                  <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl flex items-center justify-center p-4">
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
+                        <Calendar className="text-primary mx-auto mb-1" size={24} />
+                        <p className="text-xs font-medium">Calendar</p>
+                      </div>
+                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
+                        <Brain className="text-secondary mx-auto mb-1" size={24} />
+                        <p className="text-xs font-medium">AI Quizzes</p>
+                      </div>
+                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
+                        <Zap className="text-accent mx-auto mb-1" size={24} />
+                        <p className="text-xs font-medium">Focus Mode</p>
+                      </div>
+                      <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
+                        <Sparkles className="text-primary mx-auto mb-1" size={24} />
+                        <p className="text-xs font-medium">AI Assistant</p>
                       </div>
                     </div>
                   </div>
@@ -181,21 +172,21 @@ export default function Home() {
           ))}
 
           {/* Coming Soon */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold text-foreground text-center mb-8">
+          <div className="mt-6">
+            <h3 className="text-lg font-bold text-foreground text-center mb-4">
               Coming Soon
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-3">
               {upcomingProducts.map((product) => (
-                <Card key={product.name} className="text-center py-8 opacity-75">
-                  <CardContent>
-                    <div className="w-12 h-12 bg-muted/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <product.icon className="text-muted-foreground" size={24} />
+                <Card key={product.name} className="text-center py-4 opacity-75">
+                  <CardContent className="p-2">
+                    <div className="w-10 h-10 bg-muted/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <product.icon className="text-muted-foreground" size={20} />
                     </div>
-                    <h4 className="text-lg font-semibold text-foreground mb-1">
+                    <h4 className="text-sm font-semibold text-foreground">
                       {product.name}
                     </h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-xs text-muted-foreground">
                       {product.description}
                     </p>
                   </CardContent>
