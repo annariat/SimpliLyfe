@@ -16,6 +16,11 @@ const values = [
     description: "Every feature we build starts with understanding real every day problems.",
   },
   {
+    icon: Target,
+    title: "Simplicity",
+    description: "Powerful tools don't have to be complicated. We obsess over making things simple.",
+  },
+  {
     icon: Lightbulb,
     title: "Innovation",
     description: "We leverage cutting-edge AI to create tools that were previously impossible.",
@@ -24,11 +29,6 @@ const values = [
     icon: Shield,
     title: "Privacy",
     description: "Your data belongs to you. We never sell it or use it for advertising.",
-  },
-  {
-    icon: Target,
-    title: "Simplicity",
-    description: "Powerful tools don't have to be complicated. We obsess over making things simple.",
   },
 ];
 
