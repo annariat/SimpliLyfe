@@ -94,13 +94,13 @@ export default function AboutPage() {
                     <Heart className="text-primary" size={40} />
                   </div>
                   <div className="aspect-square bg-secondary/10 rounded-xl flex items-center justify-center">
-                    <Lightbulb className="text-secondary" size={40} />
+                    <Target className="text-secondary" size={40} />
                   </div>
                   <div className="aspect-square bg-accent/10 rounded-xl flex items-center justify-center">
-                    <Shield className="text-accent" size={40} />
+                    <Lightbulb className="text-accent" size={40} />
                   </div>
                   <div className="aspect-square bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Target className="text-primary" size={40} />
+                    <Shield className="text-primary" size={40} />
                   </div>
                 </div>
               </Card>
