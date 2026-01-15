@@ -66,6 +66,12 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
+                  It all started with us.  Things we needed that didn&apos;t exist,   
+                  and if they did, they were too difficult or too expensive.  
+                  We build with our own needs in mind, and once we are happy with a product,
+                  we share with the world.  
+                </p>
+                <p>
                   We believe that the best tools are the ones you don&apos;t have to
                   think about. They just work, helping you focus on what matters
                   most.
