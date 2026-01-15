@@ -66,8 +66,7 @@ export function Features() {
             <span className="gradient-text">Succeed</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            TheFocusPath combines powerful study tools with AI to help you achieve
-            your academic goals. Here&apos;s what makes it special.
+            TheFocusPath delivers powerful study tools to help you achieve your academic goals. We handle the AI complexities, so you can focus on what matters. Here&apos;s what makes it special.
           </p>
         </div>
 
