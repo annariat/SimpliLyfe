@@ -56,7 +56,7 @@ html {
 
 /* Page-by-page scroll snap container */
 .snap-scroll {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   height: calc(100vh - 64px); /* Account for navbar height */
   scroll-behavior: smooth;
@@ -65,8 +65,12 @@ html {
 /* Page-by-page scroll snap sections */
 .snap-scroll > section {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   min-height: calc(100vh - 64px);
+}
+
+/* Footer snap behavior */
+.snap-scroll > footer {
+  scroll-snap-align: end;
 }
 
 /* Hide scrollbar but keep functionality */
