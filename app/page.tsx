@@ -104,7 +104,7 @@ export default function Home() {
             <Badge variant="primary" className="mb-3">
               Our Products
             </Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
               <span className="gradient-text">Simplify</span> Your Life
             </h2>
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="py-20 lg:py-32 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
               Why <span className="gradient-text">SimpliLyfe</span>?
             </h2>
           </div>
