@@ -11,7 +11,7 @@ const products = [
     description: "Help students organize classes, manage tasks, generate quizzes, and master focus techniques with AI-driven tools.",
     href: "/focuspath",
     icon: BookOpen,
-    features: ["Smart Calendar", "AI Quiz Generation", "Focus Techniques", "Task Management"],
+    features: ["Smart Calendar", "Guided Preparation", "Focus Techniques", "Task Management"],
     status: "Beta",
     color: "primary",
   },
@@ -41,8 +41,8 @@ const values = [
     description: "We believe powerful tools don't have to be complicated. Every product we build focuses on doing one thing exceptionally well.",
   },
   {
-    title: "AI-Enhanced",
-    description: "We leverage cutting-edge AI to create experiences that adapt to you, not the other way around.",
+    title: "Built For You",
+    description: "We build the custom experience for you that allows you to focus on what matters.",
   },
   {
     title: "Privacy First",
@@ -154,7 +154,7 @@ export default function Home() {
                       </div>
                       <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
                         <Brain className="text-secondary mx-auto mb-1" size={24} />
-                        <p className="text-xs font-medium">AI Quizzes</p>
+                        <p className="text-xs font-medium">Unlimited Practice</p>
                       </div>
                       <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
                         <Zap className="text-accent mx-auto mb-1" size={24} />
@@ -162,7 +162,7 @@ export default function Home() {
                       </div>
                       <div className="p-3 bg-card/80 rounded-lg border border-border text-center">
                         <Sparkles className="text-primary mx-auto mb-1" size={24} />
-                        <p className="text-xs font-medium">AI Assistant</p>
+                        <p className="text-xs font-medium">Study Buddy</p>
                       </div>
                     </div>
                   </div>
