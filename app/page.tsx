@@ -52,9 +52,9 @@ const values = [
 
 export default function Home() {
   return (
-    <>
+    <div className="snap-scroll">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-32 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Badge variant="primary" className="mb-6">
@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-32 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
@@ -231,7 +231,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover">
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover flex flex-col justify-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Ready to Simplify Your Life?
@@ -250,6 +250,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

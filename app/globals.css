@@ -52,12 +52,31 @@ body {
 /* Smooth scrolling with snap */
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+}
+
+/* Page-by-page scroll snap container */
+.snap-scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: calc(100vh - 64px); /* Account for navbar height */
+  scroll-behavior: smooth;
 }
 
 /* Page-by-page scroll snap sections */
-section {
+.snap-scroll > section {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: calc(100vh - 64px);
+}
+
+/* Hide scrollbar but keep functionality */
+.snap-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.snap-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Selection color */
