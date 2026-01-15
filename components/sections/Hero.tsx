@@ -103,7 +103,7 @@ export function Hero() {
 
         {/* Secondary CTA */}
         <div className="mt-4">
-          <Link href="/features">
+          <Link href="/focuspath#features">
             <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               Explore Features
               <ArrowRight size={16} className="ml-2" />
