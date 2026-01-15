@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { CTA } from "@/components/sections/CTA";
-import { Heart, Target, Lightbulb, Users, Rocket, Shield } from "lucide-react";
+import { Heart, Target, Lightbulb, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About - SimpliLyfe",
@@ -91,16 +91,16 @@ export default function AboutPage() {
               <Card className="p-8">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="aspect-square bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Target className="text-primary" size={40} />
+                    <Heart className="text-primary" size={40} />
                   </div>
                   <div className="aspect-square bg-secondary/10 rounded-xl flex items-center justify-center">
-                    <Users className="text-secondary" size={40} />
+                    <Lightbulb className="text-secondary" size={40} />
                   </div>
                   <div className="aspect-square bg-accent/10 rounded-xl flex items-center justify-center">
-                    <Rocket className="text-accent" size={40} />
+                    <Shield className="text-accent" size={40} />
                   </div>
                   <div className="aspect-square bg-primary/10 rounded-xl flex items-center justify-center">
-                    <Heart className="text-primary" size={40} />
+                    <Target className="text-primary" size={40} />
                   </div>
                 </div>
               </Card>
