@@ -172,21 +172,21 @@ export default function Home() {
           ))}
 
           {/* Coming Soon */}
-          <div className="mt-6">
+          <div className="mt-12">
             <h3 className="text-lg font-bold text-foreground text-center mb-4">
               Coming Soon
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-4">
               {upcomingProducts.map((product) => (
-                <Card key={product.name} className="text-center opacity-75">
-                  <CardContent className="pt-8">
-                    <div className="w-12 h-12 bg-muted/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <product.icon className="text-muted-foreground" size={24} />
+                <Card key={product.name} className="text-center py-4 opacity-75">
+                  <CardContent className="p-3">
+                    <div className="w-10 h-10 bg-muted/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <product.icon className="text-muted-foreground" size={20} />
                     </div>
-                    <h4 className="text-xl font-semibold text-foreground mb-3">
+                    <h4 className="text-base font-semibold text-foreground mb-1">
                       {product.name}
                     </h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       {product.description}
                     </p>
                   </CardContent>
