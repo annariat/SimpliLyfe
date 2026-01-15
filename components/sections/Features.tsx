@@ -34,7 +34,7 @@ const features = [
   },
   {
     icon: Brain,
-    title: "Guide Excellence",
+    title: "Guided Excellence",
     description: "Upload your notes and let us create study plans, flash cards, and quizzes to guide you to excellent results.",
     color: "text-primary",
     bgColor: "bg-primary/10",
