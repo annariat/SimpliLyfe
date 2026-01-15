@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Is TheFocusPath free?",
-    answer: "During the beta period, TheFocusPath is completely free. We'll announce our pricing model before the public launch. The planning and tracking capabilities will remain free for Beta users. The pricing model for new users after launch and for value added AI-driven services will be announced before the public launch.",
+    answer: "During the beta period, TheFocusPath is completely free. Planning and tracking features will remain free for Beta users. Pricing model for new users and AI-driven services will be announced before the public launch.",
   },
   {
     question: "Are all features available in Beta?",
