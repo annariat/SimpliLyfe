@@ -107,7 +107,7 @@ export default function ContactPage() {
       {/* Contact Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 items-stretch">
             {/* Left Column - Contact Form & Info */}
             <div className="space-y-6">
               {/* Contact Form */}
@@ -202,7 +202,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right Column - FAQ */}
-            <Card className="h-fit">
+            <Card className="h-full">
               <CardContent className="p-6">
                 <h2 className="text-2xl font-bold text-foreground mb-4">
                   Frequently Asked Questions
