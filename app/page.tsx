@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
@@ -62,8 +63,14 @@ export default function Home() {
 
         <div className="relative max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 text-center">
           <div className="flex justify-center items-center gap-4 mb-8">
-            <div className="p-3 bg-card/60 backdrop-blur-sm rounded-xl border border-border shadow-sm">
-              <Sparkles className="w-8 h-8 text-primary" />
+            <div className="p-2 bg-card/60 backdrop-blur-sm rounded-xl border border-border shadow-sm">
+              <Image
+                src="/icon.png"
+                alt="SimpliLyfe Icon"
+                width={48}
+                height={48}
+                className="w-12 h-12"
+              />
             </div>
           </div>
 
