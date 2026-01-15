@@ -107,75 +107,75 @@ export default function ContactPage() {
       {/* Contact Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card>
-              <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-6">
-                  Send us a Message
-                </h2>
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Left Column - Contact Form & Info */}
+            <div className="space-y-6">
+              {/* Contact Form */}
+              <Card>
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold text-foreground mb-4">
+                    Send us a Message
+                  </h2>
 
-                {isSubmitted ? (
-                  <div className="text-center py-12">
-                    <CheckCircle className="text-secondary mx-auto mb-4" size={48} />
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      Message Sent!
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Thanks for reaching out. We&apos;ll get back to you soon.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <Input
-                      label="Name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your name"
-                      required
-                    />
-                    <Input
-                      label="Email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your@email.com"
-                      required
-                    />
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        Message
-                      </label>
-                      <textarea
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="How can we help?"
-                        rows={5}
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-card/60 backdrop-blur-sm text-foreground placeholder:text-muted-light transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                      />
+                  {isSubmitted ? (
+                    <div className="text-center py-8">
+                      <CheckCircle className="text-secondary mx-auto mb-4" size={48} />
+                      <h3 className="text-xl font-semibold text-foreground mb-2">
+                        Message Sent!
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Thanks for reaching out. We&apos;ll get back to you soon.
+                      </p>
                     </div>
-                    <Button type="submit" disabled={isLoading} className="w-full">
-                      {isLoading ? "Sending..." : "Send Message"}
-                      <Send size={18} className="ml-2" />
-                    </Button>
-                  </form>
-                )}
-              </CardContent>
-            </Card>
+                  ) : (
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                      <Input
+                        label="Name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Your name"
+                        required
+                      />
+                      <Input
+                        label="Email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="your@email.com"
+                        required
+                      />
+                      <div>
+                        <label className="block text-sm font-medium text-foreground mb-2">
+                          Message
+                        </label>
+                        <textarea
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          placeholder="How can we help?"
+                          rows={3}
+                          required
+                          className="w-full px-4 py-3 rounded-lg border border-border bg-card/60 backdrop-blur-sm text-foreground placeholder:text-muted-light transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                        />
+                      </div>
+                      <Button type="submit" disabled={isLoading} className="w-full">
+                        {isLoading ? "Sending..." : "Send Message"}
+                        <Send size={18} className="ml-2" />
+                      </Button>
+                    </form>
+                  )}
+                </CardContent>
+              </Card>
 
-            {/* Contact Info & FAQ */}
-            <div className="space-y-8">
               {/* Contact Info */}
               <Card>
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold text-foreground mb-4">
                     Contact Info
                   </h2>
-                  <div className="space-y-6">
+                  <div className="space-y-4">
                     {contactInfo.map((info) => (
                       <div key={info.title} className="flex items-start gap-4">
                         <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -199,26 +199,26 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
-
-              {/* FAQ */}
-              <Card>
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
-                    Frequently Asked Questions
-                  </h2>
-                  <div className="space-y-6">
-                    {faqs.map((faq, index) => (
-                      <div key={index}>
-                        <h3 className="font-medium text-foreground mb-2">
-                          {faq.question}
-                        </h3>
-                        <p className="text-sm text-muted-foreground">{faq.answer}</p>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
             </div>
+
+            {/* Right Column - FAQ */}
+            <Card className="h-fit">
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-bold text-foreground mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <div className="space-y-5">
+                  {faqs.map((faq, index) => (
+                    <div key={index}>
+                      <h3 className="font-medium text-foreground mb-2">
+                        {faq.question}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
