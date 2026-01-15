@@ -72,11 +72,11 @@ export default function Home() {
             <span className="gradient-text">Lyfe</span>
           </h1>
 
-          <p className="mt-6 text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-6 text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto">
             Building products that simplify your life
           </p>
 
-          <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
             We create thoughtfully designed tools that help you focus on what matters most.
             No complexity. No clutter. Just solutions that work.
           </p>
