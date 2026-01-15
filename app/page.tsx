@@ -61,7 +61,7 @@ export default function Home() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div className="relative max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 text-center">
           <div className="flex justify-center items-center gap-4 mb-8">
             <div className="p-3 bg-card/60 backdrop-blur-sm rounded-xl border border-border shadow-sm">
               <Sparkles className="w-8 h-8 text-primary" />
@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* Products Section */}
       <section className="py-8 lg:py-12 flex flex-col justify-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16 w-full">
           <div className="text-center max-w-3xl mx-auto mb-6">
             <Badge variant="primary" className="mb-3">
               Our Products
@@ -200,7 +200,7 @@ export default function Home() {
 
       {/* Values Section */}
       <section className="py-20 lg:py-32 flex flex-col justify-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground">
               Why <span className="gradient-text">SimpliLyfe</span>?
@@ -224,7 +224,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover flex flex-col justify-center">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white">
             Ready to Simplify Your Life?
           </h2>
