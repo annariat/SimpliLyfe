@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
+import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, Sparkles, Heart, Zap, BookOpen, Brain, Calendar } from "lucide-react";
 
 const products = [
@@ -241,6 +242,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
