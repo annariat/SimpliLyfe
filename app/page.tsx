@@ -65,7 +65,7 @@ export default function Home() {
           <div className="flex justify-center items-center gap-4 mb-8">
             <div className="p-2 bg-card/60 backdrop-blur-sm rounded-xl border border-border shadow-sm">
               <Image
-                src="/icon.png"
+                src="/icon-transparent.png"
                 alt="SimpliLyfe Icon"
                 width={64}
                 height={64}
