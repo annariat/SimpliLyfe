@@ -66,9 +66,9 @@ export default function Home() {
             <Image
               src="/icon-transparent.png"
               alt="SimpliLyfe Icon"
-              width={80}
-              height={80}
-              className="w-20 h-20"
+              width={88}
+              height={88}
+              className="w-22 h-22"
             />
           </div>
 
