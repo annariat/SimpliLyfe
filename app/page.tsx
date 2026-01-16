@@ -62,13 +62,13 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 text-center">
-          <div className="flex justify-center items-center gap-4 mb-8">
+          <div className="flex justify-center items-center gap-4 mb-4">
             <Image
               src="/icon-transparent.png"
               alt="SimpliLyfe Icon"
-              width={88}
-              height={88}
-              className="w-22 h-22"
+              width={96}
+              height={96}
+              className="w-24 h-24"
             />
           </div>
 
