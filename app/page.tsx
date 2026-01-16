@@ -63,15 +63,13 @@ export default function Home() {
 
         <div className="relative max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 text-center">
           <div className="flex justify-center items-center gap-4 mb-8">
-            <div className="p-2 bg-card/60 backdrop-blur-sm rounded-xl border border-border shadow-sm">
-              <Image
-                src="/icon-transparent.png"
-                alt="SimpliLyfe Icon"
-                width={64}
-                height={64}
-                className="w-14 h-14"
-              />
-            </div>
+            <Image
+              src="/icon-transparent.png"
+              alt="SimpliLyfe Icon"
+              width={80}
+              height={80}
+              className="w-20 h-20"
+            />
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
