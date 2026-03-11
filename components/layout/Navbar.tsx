@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-card/60 backdrop-blur-md border-b border-border">
       <nav className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="flex items-center h-24">
+        <div className="flex items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center gap-2">
             <Image
@@ -33,7 +33,7 @@ export function Navbar() {
               alt="SimpliLyfe"
               width={1435}
               height={273}
-              className="h-7 w-auto hidden sm:block"
+              className="h-9 w-auto hidden sm:block"
               priority
             />
           </Link>

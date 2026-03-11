@@ -3,12 +3,12 @@
 :root {
   --background: #fafafa;
   --foreground: #1f2937;
-  --primary: #6366f1;
-  --primary-light: #eef2ff;
-  --primary-hover: #4f46e5;
-  --secondary: #10b981;
-  --secondary-light: #ecfdf5;
-  --secondary-hover: #059669;
+  --primary: #17417f;
+  --primary-light: #e8f0f8;
+  --primary-hover: #0f2f5e;
+  --secondary: #46a0b7;
+  --secondary-light: #eaf6f9;
+  --secondary-hover: #358a9e;
   --accent: #f59e0b;
   --muted: #6b7280;
   --muted-foreground: #6b7280;
@@ -52,16 +52,17 @@ body {
 /* Smooth scrolling with snap */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
-/* Smooth scroll container */
-.snap-scroll {
-  scroll-behavior: smooth;
-}
-
-/* Only hero section takes full viewport height */
-.snap-scroll > section:first-child {
+/* Each section snaps and fills the viewport */
+.snap-scroll > section {
+  scroll-snap-align: start;
+  scroll-margin-top: 64px;
   min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Hide scrollbar but keep functionality */

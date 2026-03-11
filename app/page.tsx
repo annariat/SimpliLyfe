@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div className="snap-scroll">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center overflow-hidden">
+      <section className="relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
