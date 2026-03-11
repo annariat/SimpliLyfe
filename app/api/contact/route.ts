@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { getSQL } from '@/lib/db';
 
 export async function POST(request: Request) {
   try {
@@ -12,21 +12,11 @@ export async function POST(request: Request) {
       );
     }
 
-    // Insert message into Supabase
-    const { error } = await supabase
-      .from('contact_messages')
-      .insert([
-        {
-          name,
-          email,
-          message,
-          sent_at: new Date().toISOString(),
-        }
-      ]);
-
-    if (error) {
-      throw error;
-    }
+    const sql = getSQL();
+    await sql`
+      INSERT INTO contact_messages (name, email, message, sent_at)
+      VALUES (${name}, ${email}, ${message}, NOW())
+    `;
 
     return NextResponse.json(
       { message: 'Message sent successfully!' },

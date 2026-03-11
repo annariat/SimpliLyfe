@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { getSQL } from '@/lib/db';
 
 export async function POST(request: Request) {
   try {
@@ -12,32 +12,28 @@ export async function POST(request: Request) {
       );
     }
 
-    // Insert email into Supabase
-    const { error } = await supabase
-      .from('beta_signups')
-      .insert([
-        {
-          email,
-          signed_up_at: new Date().toISOString(),
-        }
-      ]);
-
-    if (error) {
-      // Handle duplicate email
-      if (error.code === '23505') {
-        return NextResponse.json(
-          { message: 'Already signed up!' },
-          { status: 200 }
-        );
-      }
-      throw error;
-    }
+    const sql = getSQL();
+    await sql`
+      INSERT INTO beta_signups (email, signed_up_at)
+      VALUES (${email}, NOW())
+    `;
 
     return NextResponse.json(
       { message: 'Successfully signed up!' },
       { status: 200 }
     );
-  } catch (error) {
+  } catch (error: unknown) {
+    // Handle duplicate email (PostgreSQL unique violation)
+    if (
+      error instanceof Error &&
+      'code' in error &&
+      (error as Record<string, unknown>).code === '23505'
+    ) {
+      return NextResponse.json(
+        { message: 'Already signed up!' },
+        { status: 200 }
+      );
+    }
     console.error('Beta signup error:', error);
     return NextResponse.json(
       { error: 'Failed to sign up' },
