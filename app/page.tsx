@@ -68,7 +68,7 @@ export default function Home() {
               alt="SimpliLyfe Icon"
               width={716}
               height={663}
-              className="w-16 h-16 sm:w-[72px] sm:h-[72px]"
+              className="w-20 h-20 sm:w-24 sm:h-24"
             />
           </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
               alt="SimpliLyfe"
               width={1435}
               height={273}
-              className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto mx-auto"
+              className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto mx-auto"
               priority
             />
           </h1>
