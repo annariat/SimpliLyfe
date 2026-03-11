@@ -17,15 +17,23 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-card/60 backdrop-blur-md border-b border-border">
       <nav className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="flex items-center h-16">
+        <div className="flex items-center h-24">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
             <Image
-              src="/Logo.png"
+              src="/logomark.png"
               alt="SimpliLyfe"
-              width={160}
-              height={50}
-              className="h-10 w-auto"
+              width={716}
+              height={663}
+              className="h-12 w-auto"
+              priority
+            />
+            <Image
+              src="/wordmark.png"
+              alt="SimpliLyfe"
+              width={1435}
+              height={273}
+              className="h-7 w-auto hidden sm:block"
               priority
             />
           </Link>
@@ -44,7 +52,7 @@ export function Navbar() {
           </div>
 
           {/* Spacer for balance */}
-          <div className="hidden md:block w-[160px]" />
+          <div className="hidden md:block w-[76px]" />
 
           {/* Mobile Menu Button */}
           <button

@@ -59,8 +59,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Sections take full viewport height */
-.snap-scroll > section {
+/* Only hero section takes full viewport height */
+.snap-scroll > section:first-child {
   min-height: calc(100vh - 64px);
 }
 

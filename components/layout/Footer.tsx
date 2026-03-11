@@ -24,13 +24,22 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
-            <Image
-              src="/Logo.png"
-              alt="SimpliLyfe"
-              width={160}
-              height={50}
-              className="h-10 w-auto"
-            />
+            <div className="flex items-center gap-2">
+              <Image
+                src="/logomark.png"
+                alt="SimpliLyfe"
+                width={716}
+                height={663}
+                className="h-8 w-auto"
+              />
+              <Image
+                src="/wordmark.png"
+                alt="SimpliLyfe"
+                width={1435}
+                height={273}
+                className="h-5 w-auto"
+              />
+            </div>
             <p className="mt-4 text-muted-foreground text-sm">
               Building products to simplify your life, one app at a time.
             </p>
