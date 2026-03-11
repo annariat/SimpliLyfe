@@ -33,7 +33,7 @@ export function CTA() {
   };
 
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover">
+    <section id="beta-signup" className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-hover">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
           Ready to Transform Your Studies?

@@ -12,7 +12,7 @@ const products = [
     description: "Help students organize classes, manage tasks, generate quizzes, and master focus techniques with AI-driven tools.",
     href: "/focuspath",
     icon: BookOpen,
-    features: ["Smart Calendar", "Guided Preparation", "Focus Techniques", "Task Management"],
+    features: ["Calendar", "Focus Techniques", "Task Management", "Customizable Dashboards"],
     status: "Beta",
     color: "primary",
   },

@@ -75,7 +75,7 @@ export function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4" id="beta-signup">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           {isSubmitted ? (
             <div className="flex items-center gap-2 text-secondary bg-secondary/10 px-6 py-3 rounded-lg">
               <CheckCircle size={24} />
